@@ -19,12 +19,9 @@ namespace Hello_fact_advstud
         static int fact(int value)
   
         {
-            if (value == 1) 
+            if (value <= 1)
                 return 1;
-            if (value == 0)
-                return 1;
-            if (value < 0)
-                return -1;
+            
             return value * fact(value - 1);
         }
     }
